@@ -12,8 +12,6 @@ import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Object ImageView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,19 +25,26 @@ public class MainActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"SuccefullLogin", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Succefull Login", Toast.LENGTH_SHORT).show();
+                intentToHome();
             }
         });
         mybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "changeActivity", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "IntroduceTusDatos", Toast.LENGTH_SHORT).show();
                 intentExample();
             }
         });
     }
-
-    private void intentExample(){
-    Intent intent = new Intent(this, Home.class); startActivity(intent);
+    private void intentExample() {
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
     }
-}
+    private void intentToHome() {
+            Intent intentToHome = new Intent(this, Home.class);
+            startActivity(intentToHome);
+        }
+        }
+
+

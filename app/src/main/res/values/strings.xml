@@ -4,6 +4,21 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="login1" >Add_User</string>
-    <string name="login2" >Add_Password</string>
+    <string name="login1">Add_User</string>
+    <string name="login2">Add_Password</string>
+    <string name="signIN">SIGN IN</string>
+    <string name="tittle_signIn">SignIN</string>
+    <string name="name_user">User Name</string>
+    <string name="mailSignIn">Mail</string>
+    <string name="ages_SignIn">Age</string>
+    <string name="user_password">Choose a Password</string>
+    <string name="reenter_password">Reenter Password</string>
+    <string name="institutionalimage">institutionalImage</string>
+    <string name="buttonregister">ButtonRegister</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="female_option_radio_button">Female</string>
+    <string name="male_option_radio_button">Male</string>
+    <string name="SignIn">Sign In</string>
+    <string name="logo_android">logo_android</string>
+    <string name="ages">Ages</string>
 </resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/tittle_SignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="345dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/tittle_signIn"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserSignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUserSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/name_user"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMailSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/tittle_SignIn"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editTextMailSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/mailSignIn"
+        android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/user_Password_SigIn"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserSignIn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/user_Password_SigIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/user_password"
+        android:inputType="textWebPassword"
+        android:maxLength="8"
+        app:layout_constraintBottom_toTopOf="@+id/user_Reenter_Password_SignIn"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMailSignIn"
+        tools:layout_editor_absoluteX="159dp" />
+
+    <EditText
+        android:id="@+id/user_Reenter_Password_SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/reenter_password"
+        android:inputType="textWebPassword"
+        android:maxLength="8"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_ages"
+        app:layout_constraintTop_toBottomOf="@+id/user_Password_SigIn"
+        tools:layout_editor_absoluteX="165dp" />
+
+    <Spinner
+        android:id="@+id/spinner_ages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/ages"
+        android:scrollbarStyle="outsideInset"
+        android:entries="@array/ages_SingIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_Reenter_Password_SignIn" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_ages">
+
+        <RadioButton
+            android:id="@+id/female_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/female_option_radio_button"
+            app:layout_constraintBottom_toTopOf="@+id/male_option"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_ages"
+            tools:layout_editor_absoluteX="87dp" />
+
+        <RadioButton
+            android:id="@+id/male_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="220dp"
+            android:text="@string/male_option_radio_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/female_option"
+            tools:layout_editor_absoluteX="121dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_SignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="204dp"
+        android:text="@string/SignIn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_ages"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
